@@ -57,6 +57,19 @@ public class HolaMundo {
         competencias[1][1] = "arquitectura";
         competencias[1][2] = "requerimientos";
 
+        String[][] tablero = new String[3][3];
+
+        tablero[0][0] = "X";  tablero[0][1] = "O";  tablero[0][2] = "X";
+        tablero[1][0] = "O";  tablero[1][1] = "X";  tablero[1][2] = "O";
+        tablero[2][0] = "";   tablero[2][1] = "";   tablero[2][2] = "X";
+
+        boolean[][] asistencia = new boolean[4][5];
+
+        asistencia[0][0] = true;   asistencia[0][1] = true;   asistencia[0][2] = false;  asistencia[0][3] = true;   asistencia[0][4] = true;
+        asistencia[1][0] = true;   asistencia[1][1] = false;  asistencia[1][2] = false;  asistencia[1][3] = true;   asistencia[1][4] = true;
+        asistencia[2][0] = true;   asistencia[2][1] = true;   asistencia[2][2] = true;   asistencia[2][3] = true;   asistencia[2][4] = true;
+        asistencia[3][0] = false;  asistencia[3][1] = true;   asistencia[3][2] = true;   asistencia[3][3] = false;  asistencia[3][4] = true;
+
         // 3 dimensiones
 
         String[][][] datos = new String[5][5][3];
